@@ -2,12 +2,12 @@
 pipeline {
     agent none
     environment {
-        DOCKERHUB_AUTH = credentials('kacissokho')
+        DOCKERHUB_AUTH = credentials('dockerhub')
         ID_DOCKER = "${DOCKERHUB_AUTH_USR}"
         PORT_EXPOSED = "80"
         IMAGE_NAME = "alpinebootcamp26"
         IMAGE_TAG = "v1.3"
-        DOCKER_USERNAME = 'kacissokho'
+        DOCKER_USERNAME = 'dockerhub'
     }
     stages {
       stage ('Build image'){
