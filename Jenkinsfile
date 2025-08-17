@@ -1,5 +1,4 @@
 pipeline {
-    agent none
     environment {
         DOCKERHUB_AUTH = credentials('kacissokho')
         ID_DOCKER = "${DOCKERHUB_AUTH_USR}"
@@ -7,6 +6,7 @@ pipeline {
         IMAGE_NAME = "alpinebootcamp26"
         IMAGE_TAG = "v1.1"
     }
+    agent none
     stages {
       stage ('Build image'){
           agent any
