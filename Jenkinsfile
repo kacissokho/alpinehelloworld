@@ -7,7 +7,7 @@ pipeline {
         PORT_EXPOSED = "80"
         IMAGE_NAME = "alpinebootcamp26"
         IMAGE_TAG = "v1.3"
-        DOCKER_USERNAME = 'dockerhub'
+        DOCKER_USERNAME = 'kacissokho'
     }
     stages {
       stage ('Build image'){
