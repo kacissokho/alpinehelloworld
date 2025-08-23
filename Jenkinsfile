@@ -58,7 +58,7 @@ pipeline {
       stage('Deploy in staging'){
           agent any
             environment {
-                SERVER_IP = "75.101.200.204"
+                SERVER_IP = "8.83.222.91"
             }
           steps {
             sshagent(['SSH_AUTH_SERVER']) {
